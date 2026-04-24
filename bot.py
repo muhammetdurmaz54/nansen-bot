@@ -5,10 +5,10 @@ from telegram import Bot
 # =========================
 # AYARLAR
 # =========================
-TELEGRAM_TOKEN = "AAFeHiH3BVMPPag0t7KlZz4BohqFJ2Ny55M"
-CHAT_ID = "8660278421"
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 
-API_KEY = "nsn_64e38829c365758a2dac699c4b87c5aa"
+API_KEY = os.getenv("API_KEY")
 URL = "https://api.nansen.ai/api/v1/token-screener"
 
 bot = Bot(token=TELEGRAM_TOKEN)
